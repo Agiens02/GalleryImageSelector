@@ -156,15 +156,15 @@ public class GalleryImageSelector {
                 String[] items;
                 if (imageView.getTag() == CUSTOM_IMAGE) {
                     items = new String[2];
-                    items[0] = "Select from gallery";
-                    items[1] = "Remove";
+                    items[0] = activity.getString(R.string.select_from_gallery);
+                    items[1] = activity.getString(R.string.remove);
                 } else {
                     items = new String[1];
-                    items[0] = "Select from gallery";
+                    items[0] = activity.getString(R.string.select_from_gallery);
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                 builder.setCancelable(true);
-                builder.setTitle("user image");
+                builder.setTitle(activity.getString(R.string.title));
                 builder.setItems(items, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -273,7 +273,7 @@ public class GalleryImageSelector {
                     saveBitmapToFile(new File(activity.getFilesDir(), "user_image"), image);
                 }
             } else {
-                Toast.makeText(activity, "Error during image selection, use another gallery to select it", Toast.LENGTH_LONG).show();
+                Toast.makeText(activity, activity.getString(R.string.image_not_selected), Toast.LENGTH_LONG).show();
             }
         }
     }

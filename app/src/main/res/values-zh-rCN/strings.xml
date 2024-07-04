@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_from_gallery">从图库选择</string>
+    <string name="remove">移除头像</string>
+    <string name="title">用户头像</string>
+    <string name="image_not_selected">选择头像失败，请尝试其他图库</string>
+</resources>

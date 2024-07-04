@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_from_gallery">Select from Gallery</string>
+    <string name="remove">remove</string>
+    <string name="title">user image</string>
+    <string name="image_not_selected">Error during image selection, use another gallery to select it</string>
+</resources>
